@@ -1,51 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *, *::after, *::before {
   box-sizing: border-box;
+  font-size: clamp(12px, 2vw, 14px);
+  color: var(--gray-950);
 }
 
 body {
   margin: 0;
   padding: 0;
-  --yellow: #F4D04E;
-  --gray-950: #111111;
-  --gray-500: #6B6B6B;
+  --yellow: hsl(47, 88%, 63%);
+  --gray-950: hsl(0, 0%, 7%);
+  --gray-500: hsl(0, 0%, 42%);
+  font-family: "Figtree", sans-serif;
 }
 
 .main {
-
+  width: 100%;
+  height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  letter-spacing: 0;
 }
 
 .blog-card {
-
+ width: 327px;
+ height: auto;
+ background-color: white;
+ border-radius: 20px;
+ border: 1px solid var(--gray-950);
+ box-shadow: 8px 8px 0 0 var(--gray-950);
+ padding: 24px;
 }
 
-.blog-img {
+.blog-image {
+  width: 100%;
+  height: 200px;
+  background-image: url(./assets/images/illustration-article.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
 
+.blog-content {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .blog-tag {
-
+  margin: 0;
+  font-weight: 900;
+  width: 73px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  background-color: var(--yellow);
+  border-radius: 4px;
 }
 
 .blog-date {
-
+  margin: 0;
+  font-weight: 500;
+  padding: 2px 0;
 }
 
 .blog-title {
-
+  margin: 0;
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 800;
+  padding: 2px 0;
 }
 
 .blog-description {
-
+  margin: 0;
+  color: var(--gray-500);
+  font-size: clamp(14px, 2vw, 16px);
+  padding: 2px 0;
 }
 
 .blog-author {
-
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .blog-author-avatar {
-
+  width: 32px;
+  height: 32px;
 }
 
 .blog-author-name {
+  font-weight: 800;
+  font-size: 14px;
+}
 
+@media (min-width: 720px) {
+  .blog-card {
+    width: 384px;
+  }
+  .blog-tag {
+    width: 82px;
+    height: 29px;
+  }
 }
