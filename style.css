@@ -1,0 +1,51 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  --yellow: #F4D04E;
+  --gray-950: #111111;
+  --gray-500: #6B6B6B;
+}
+
+.main {
+
+}
+
+.blog-card {
+
+}
+
+.blog-img {
+
+}
+
+.blog-tag {
+
+}
+
+.blog-date {
+
+}
+
+.blog-title {
+
+}
+
+.blog-description {
+
+}
+
+.blog-author {
+
+}
+
+.blog-author-avatar {
+
+}
+
+.blog-author-name {
+
+}
